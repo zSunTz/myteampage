@@ -1,0 +1,95 @@
+/* Base */
+* {
+    box-sizing: inherit;
+}
+
+
+html {
+    line-height: 1.6rem;
+    font-family: var(--content-font);
+    box-sizing: border-box;
+}
+
+.font-weight-bold {
+    font-weight: 700!important;
+}
+
+/* Main */
+.container {
+    margin-top: 50px;
+}
+
+.team-name {
+    font-size: 2.5rem;
+    padding-left: 85px;
+    font-family: 'PT Serif', serif;
+}
+
+.team-info {
+    width: 310px;
+}
+
+.team-info h2 {
+    font-family: 'PT Serif', serif;
+    margin-top: 0;
+}
+
+.team-info p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.member-info {
+    position: relative;
+    height: 334px;
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+}
+
+.member-img {
+    position: relative;
+    max-width: 250px;
+    max-height: 350px;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.member-img:hover {
+    transform: translateY(-20px);
+    color: orange;
+}
+
+.lt {
+    margin-top: 130px;
+}
+
+.member-img::before {
+    content: attr(member-position);
+    position: absolute;
+    top: 0;
+    right: -25px;
+    font-family: 'PT Serif', serif;
+    writing-mode: vertical-lr;
+    cursor: default;
+    user-select: none;
+    letter-spacing: 1px;
+}
+
+.member-img::after {
+    content: attr(member-name);
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer {
+    margin: 85px 0 20px 0;
+    color: #A9A9A9;
+    text-align: center;
+}

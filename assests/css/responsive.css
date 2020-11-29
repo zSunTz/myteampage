@@ -1,0 +1,26 @@
+@media (max-width: 739px) {
+    .header {
+        padding-left: 20px;
+    }
+    .member-list {
+        margin-right: 15px;
+    }
+    .team-name {
+        margin-bottom: 38px;
+        padding-left: 0;
+    }
+    .member-info {
+        height: 200px;
+        position: relative;
+    }
+    .member-img {
+        width: 150px;
+        height: 220px;
+    }
+    .lt {
+        margin-top: 50px;
+    }
+    .mt {
+        margin-top: 100px;
+    }
+}
